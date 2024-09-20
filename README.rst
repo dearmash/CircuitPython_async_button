@@ -99,7 +99,7 @@ There are two classes:
   .. code-block:: python
 
      button = async_button.SimpleButton(board.D5, True)
-     await button.pressed
+     await button.pressed()
 
 * ``Button``: This has much more features. It creates a background process to monitor the button
   and allows the user to ``await`` for single clicks, double clicks, long clicks etc. It must be instantiated
